@@ -1,0 +1,28 @@
+{
+  "name": "chatbot",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.53",
+    "@ai-sdk/react": "^2.0.76",
+    "ai": "^5.0.76",
+    "next": "^15.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.15",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.5",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^4.1.15",
+    "typescript": "^5.5.4"
+  }
+}

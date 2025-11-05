@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Variables CSS personalizadas para ConversaIA */
+:root {
+  --primary-gradient: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  --secondary-gradient: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  --dark-bg: #0f172a;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  color-scheme: dark;
+}
+
+/* Reset y configuración base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e40af 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Efectos de scroll personalizados */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0891b2, #7c3aed);
+}
+
+/* Animaciones personalizadas */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
